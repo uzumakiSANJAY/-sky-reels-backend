@@ -26,7 +26,7 @@ router.use('/payments', paymentRoutes);
 router.use('/reviews', reviewRoutes);
 
 // 404 handler for undefined routes
-router.use('/{*any}', (req, res) => {
+router.use('*', (req, res) => {
     res.status(404).json({
         success: false,
         message: 'Route not found',
