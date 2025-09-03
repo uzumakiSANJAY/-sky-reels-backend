@@ -1,0 +1,35 @@
+{
+  "name": "sky-reels-food-delivery-backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:seed": "sequelize-cli db:seed:all",
+    "build": "npm install",
+    "deploy": "npm run build && npm start"
+  },
+  "keywords": ["food-delivery", "restaurant", "api"],
+  "author": "Sky Reels Team",
+  "license": "ISC",
+  "description": "Backend API for Sky Reels Food Delivery App",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.0.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^7.0.3",
+    "pg": "^8.11.3",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.2",
+    "razorpay": "^2.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
